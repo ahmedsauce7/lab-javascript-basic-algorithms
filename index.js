@@ -77,3 +77,25 @@ for (let i = 0; i < wordArray.length; i++){
 }
 
 console.log(etCount);
+
+/* Bonus 2 */
+
+let phraseToCheck = `Was it a car or a cat I saw?" and "No 'x' in Nixon`;
+let phraseOnly = phraseToCheck.replace(/[^0-9a-z]/gi, '').toLocaleLowerCase;
+/* Ask about (/[^0-9a-z]/gi, '') to get a better understanding */
+
+let palindrome = true;
+for ( let i = 0; i < phraseOnly.length; i++){
+  if (phraseOnly[i] !== phraseOnly[phraseOnly.length - 1 -i]) {
+
+palindrome = false;
+break;
+}
+}
+
+if (palindrome) {
+  console.log(phraseToCheck + " is a palindrome! ")
+} 
+else {
+  console.log(phraseToCheck + " is not a palindrome!");
+}
