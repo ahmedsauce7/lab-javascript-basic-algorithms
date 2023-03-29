@@ -50,3 +50,30 @@ else if (names[0] === navigator){
 else {
   console.log("What?! You both have the same name?")
 }
+
+// Bonus 1: 
+
+const longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis leo neque, et consectetur eros imperdiet id. Pellentesque sollicitudin eros quis sapien suscipit malesuada. Curabitur id neque sit amet odio vulputate blandit ut at est. Nam in odio in ante dapibus ultricies. Suspendisse a lorem pellentesque leo ultrices ullamcorper. Donec porta congue lectus ut mollis. Sed convallis cursus lacus non mattis. Nam auctor mattis mauris vel dapibus. Maecenas tempor sagittis dolor, ac pulvinar ante fermentum eu. Duis et placerat sem, nec varius augue. Morbi vitae nisl eu nisl mollis molestie. Proin eget tellus vel nunc lobortis rhoncus. Aliquam ac malesuada neque, quis porttitor augue. Nulla feugiat justo nec fermentum porta. Vestibulum risus erat, facilisis at imperdiet vel, fringilla ac libero. Nulla nec orci et orci placerat consectetur.Suspendisse aliquam venenatis commodo. Integer pharetra tortor a ligula pharetra, a bibendum leo suscipit. Morbi fringilla ex sed elit commodo, quis convallis lorem porta. Etiam cursus magna at diam efficitur, finibus rhoncus nibh pretium. Cras elit dolor, consequat quis eleifend ac, rhoncus id justo. Sed malesuada ultricies tellus, et placerat nisl scelerisque eu. Cras laoreet suscipit turpis fermentum venenatis. Mauris auctor ac quam id ornare. Donec pretium sagittis molestie. Phasellus elit massa, egestas id sagittis ut, ultrices quis tortor. Aenean non ornare ex, in iaculis tortor. In id ante semper, pretium dolor vestibulum, tristique orci. Nulla facilisi. Sed aliquam quam sit amet dignissim gravida. Sed eget facilisis ex, at consectetur nulla. Nunc ac ultrices mi. Nam dictum mauris id orci viverra imperdiet. Aenean nec enim vitae mauris tincidunt porttitor. Pellentesque ligula ex, vestibulum eget lorem nec, scelerisque sodales massa. Nunc id nibh ipsum."
+
+let wordcount = 0;
+let wordArray = longText.split(' ');
+
+
+for (let i = 0; i < longText.length; i++){
+  if (longText[i] === " ") {
+    wordcount++;
+  }
+}
+console.log(wordcount);
+
+
+
+let etCount = 0;
+
+for (let i = 0; i < wordArray.length; i++){
+  if (wordArray[i] === "et") {
+    etCount++;
+  }
+}
+
+console.log(etCount);
